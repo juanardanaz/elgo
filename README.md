@@ -6,8 +6,6 @@ This is a portfolio landing page.
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -21,15 +19,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-
-### Screenshot
-
-![](./src/assets/img/)
-
-### Links
-
-- Solution URL: [ ](https://your-solution-url.com)
-- Live Site URL: [ ](https://your-live-site-url.com)
 
 ## My process
 
