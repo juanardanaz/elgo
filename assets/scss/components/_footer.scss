@@ -39,5 +39,23 @@
     &_copy {
         font-size: var(--smaller-font-size);
         color: var(--first-color-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_icon {
+        filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(70deg) brightness(104%) contrast(96%);
+
+        &:hover {
+            cursor: pointer;
+            filter: invert(49%) sepia(4%) saturate(922%) hue-rotate(300deg) brightness(88%) contrast(80%);
+        }
+
+        & img {
+            width: 30px;
+            height: auto;
+            margin-left: 5px;
+        }
     }
 }   
