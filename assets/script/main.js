@@ -54,4 +54,21 @@ function scrollTop() {
 }
 window.addEventListener('scroll', scrollTop);
 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true,
+});
+
+sr.reveal(`.home_data`);
+sr.reveal(`.home_img`, {delay: 500, origin: 'bottom'});
+sr.reveal(`.about_container`, {delay: 500});
+sr.reveal(`.qualification_container`, {delay: 800});
+sr.reveal(`.services_container`, {delay: 900});
+sr.reveal(`.portfolio_container`, {delay: 500});
+sr.reveal(`.contact_container`, {delay: 700});
+
 
