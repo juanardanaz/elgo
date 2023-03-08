@@ -312,11 +312,11 @@ img {
 }
 .home_img {
   position: absolute;
-  right: 0;
+  right: -16px;
   bottom: 0;
 }
 .home_img img {
-  width: 240px;
+  width: 350px;
 }
 .home_social {
   display: flex;
@@ -603,6 +603,9 @@ img {
     margin-right: var(--mb-4);
     margin-bottom: 0;
   }
+  .home_img {
+    bottom: -48px;
+  }
   .home_img img {
     width: 440px;
   }
@@ -636,5 +639,13 @@ img {
   }
   .home_img {
     bottom: -50px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .home_img {
+    right: -450px;
+  }
+  .home_img img {
+    width: 720px;
   }
 }
