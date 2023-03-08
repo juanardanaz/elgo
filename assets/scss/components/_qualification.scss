@@ -1,0 +1,47 @@
+/* ========= QUALIFICATION ========= */
+.qualification {
+    &_container {
+        row-gap: 2.5rem;
+    }
+
+    &_title {
+        font-size: var(--h3-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-2);
+        display: flex;
+        align-items: center;
+    }
+
+    &_title-icon {
+        font-size: 1.5rem;
+        margin-right: var(--mb-1);
+    }
+
+    &_box {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #CCC;
+    }
+
+    &_area {
+        font-size: var(--normal-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-1);
+        font-weight: var(--font-medium);
+    }
+
+    &_work {
+        font-size: var(--smaller-font-size);
+        color: var(--first-color-light);
+        display: block;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &_icon {
+        // font-size: var(--smaller-font-size);
+        filter: invert(49%) sepia(6%) saturate(505%) hue-rotate(300deg) brightness(90%) contrast(93%);
+    }
+}

@@ -1,0 +1,32 @@
+/* ========= LAYOUT ========= */
+.section {
+    padding: 4rem 0 2rem;
+
+    &_title, &_subtitle {
+        text-align: center;
+    }
+    
+    &_title {
+        font-size: var(--h1--font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-3);
+    }
+
+    &_subtitle {
+        display: block;
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+}
+
+.container {
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}

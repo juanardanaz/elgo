@@ -1,0 +1,115 @@
+/* ========= BREAKPOINTS ========= */
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .home {
+        &_home img {
+            width: 330px;
+        }
+    }
+
+    .about_container, .qualification_container, .services_container  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 6rem;
+
+        &_title {
+            margin-bottom: var(--mb-5);
+        }
+    }
+
+    .nav {
+        height: calc( var(--header-heigth) + 1.5rem );
+
+        &_list {
+            display: flex;
+        }
+
+        &_item {
+            margin-left: var(--mb-5);
+            margin-bottom: 0;
+        }
+
+        &_toggle {
+            display: none;
+        }
+    }
+
+    .home {
+        height: 100vh;
+        grid-template-rows: max-content .5fr;
+        align-content: flex-end;
+
+        &_greeting {
+            font-size: 1.25rem;
+        }
+
+        &_profession {
+            font-size: 2rem;
+        }
+
+        &_social {
+            flex-direction: row;
+            align-items: center;
+
+            &-icon {
+                margin-right: var(--mb-4);
+                margin-bottom: 0;
+            }
+        }
+
+        &_img img {
+            width: 440px;
+        }
+    }
+
+    .about {
+        &_description {
+            text-align: initial;
+        }
+
+        &_img {
+            width: 300px;
+        }
+    }
+
+    .qualification_box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio {
+        &_container {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 2rem;
+        }
+    }
+}
+
+/* For larger devices */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .qualification_container {
+        column-gap: 6rem;
+    }
+
+    .home_img {
+        bottom: -50px;
+    }
+}

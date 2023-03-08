@@ -1,0 +1,65 @@
+/* ========= HOME ========= */
+.home {
+    background-color: #000;
+    overflow: hidden;
+
+    &_container {
+        position: relative;
+        height: calc(100vh - var(--header-heigth));
+        grid-template-rows: repeat(2, max-content);
+        align-content: space-around;
+        row-gap: 2rem;
+    }
+
+    &_data {
+        border-left: 4px solid var(--first-color-lighten);
+        color: var(--first-color-lighten);
+        padding-left: 1.5rem;
+        z-index: var(--z-tooltip);
+    }
+
+    &_name {
+        font-size: var(--biggest-font-size);
+    }
+
+    &_greeting, &_profession {
+        display: block;
+        font-weight: var(--font-bold);
+    }
+
+    &_greeting {
+        font-size: .813rem;
+    }
+
+    &_profession {
+        font-size: .938rem;
+        margin-bottom: var(--mb-3);
+    }
+
+    &_img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &_img img {
+        width: 240px;
+    }
+
+    &_social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_social-icon {
+        width: max-content;
+        font-size: 1.3rem;
+        margin-bottom: var(--mb-2);
+        filter: invert(100%) sepia(1%) saturate(1820%) hue-rotate(234deg) brightness(114%) contrast(96%);
+
+        &:hover {
+            filter: invert(50%) sepia(6%) saturate(512%) hue-rotate(300deg) brightness(87%) contrast(88%);
+        }
+    }
+
+}

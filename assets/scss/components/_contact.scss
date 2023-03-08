@@ -1,0 +1,50 @@
+/* ========= CONTACT ========= */
+.contact {
+    &_container {
+        row-gap: 2.5rem;
+    }
+
+    &_content {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    &_box {
+        background-color: #FFF;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &:hover {
+            box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+        }
+    }
+
+    &_title {
+        color: var(--first-color);
+        font-size: var(--h3-font-size);
+        margin: var(--mb-1) 0;
+    }
+
+    &_icon {
+        font-size: 2rem;
+        filter: invert(6%) sepia(26%) saturate(6478%) hue-rotate(337deg) brightness(103%) contrast(97%);
+    }
+
+    &_social {
+        color: var(--first-color-light);
+        font-size: 1.25rem;
+        margin: 0 var(--mb-1);
+    }
+
+    &_media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

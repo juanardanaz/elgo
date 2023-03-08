@@ -1,0 +1,43 @@
+/* ========= FOOTER ========= */
+.footer {
+    background-color: var(--first-color-dark);
+    color: var(--first-color-lighten);
+    text-align: center;
+
+    &_container {
+        padding: 3rem 0;
+    }
+
+    &_title {
+        font-size: var(--h1-font-size);
+        margin-bottom: var(--mb-1);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &_description {
+        margin-bottom: var(--mb-3);
+    }
+
+    &_social {
+        margin-bottom: var(--mb-6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_link {
+        font-size: 1.4rem;
+        margin: 0 var(--mb-1);
+        filter: invert(97%) sepia(4%) saturate(289%) hue-rotate(251deg) brightness(112%) contrast(96%);
+        transition: .3s;
+
+        &:hover {
+            filter: invert(48%) sepia(1%) saturate(3058%) hue-rotate(299deg) brightness(92%) contrast(95%);
+        }
+    }
+
+    &_copy {
+        font-size: var(--smaller-font-size);
+        color: var(--first-color-light);
+    }
+}   
